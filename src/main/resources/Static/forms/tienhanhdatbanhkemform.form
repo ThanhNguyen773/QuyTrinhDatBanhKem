@@ -1,0 +1,82 @@
+{
+  "components": [
+    {
+      "label": "Số lượng",
+      "type": "number",
+      "layout": {
+        "row": "Row_0hgf5pf",
+        "columns": null
+      },
+      "id": "Field_1qgltd9",
+      "key": "soluong",
+      "description": "Số lượng bánh kem cần đặt",
+      "defaultValue": 1,
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Loại Bánh",
+      "values": [
+        {
+          "label": "Gato",
+          "value": "Gato"
+        },
+        {
+          "label": "Mousse",
+          "value": "Mousse"
+        },
+        {
+          "label": "Tiramisu",
+          "value": "Tiramisu"
+        }
+      ],
+      "type": "radio",
+      "layout": {
+        "row": "Row_1evbln5",
+        "columns": null
+      },
+      "id": "Field_1uakxvk",
+      "key": "loaibanh",
+      "description": "Chọn loại bánh kem cần đặt",
+      "defaultValue": "Gato",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Hình thức nhận hàng",
+      "values": [
+        {
+          "label": "Nhận tại cửa hàng",
+          "value": "Nhận tại cửa hàng"
+        },
+        {
+          "label": "Giao hàng tận nơi",
+          "value": "Giao tận nơi"
+        }
+      ],
+      "type": "radio",
+      "layout": {
+        "row": "Row_04k3tt4",
+        "columns": null
+      },
+      "id": "Field_0w53cre",
+      "key": "hinhthucnhanhang",
+      "description": "Chọn hình thức nhận hàng",
+      "validate": {
+        "required": true
+      },
+      "defaultValue": "Nhận tại cửa hàng"
+    }
+  ],
+  "type": "default",
+  "id": "tienhanhdatbanhkemformId",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.29.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.22.0",
+  "schemaVersion": 17
+}

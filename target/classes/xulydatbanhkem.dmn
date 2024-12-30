@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_0cm732p" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.29.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.22.0">
+  <decision id="xuly-datbanhkem" name="Xu Ly Dat Banh Kem">
+    <decisionTable id="DecisionTable_0mioag8" hitPolicy="FIRST">
+      <input id="Input_1" label="Loại bánh" camunda:inputVariable="loaibanh">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>loaibanh</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_1wxl3zt">
+          <text>"Gato","Mousse","Tiramisu"</text>
+        </inputValues>
+      </input>
+      <input id="InputClause_1t8dp75" label="Hình thức nhận hàng" camunda:inputVariable="hinhthucnhanhang">
+        <inputExpression id="LiteralExpression_04zy38a" typeRef="string">
+          <text>hinhthucnhanhang</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_1l7cpnj">
+          <text>"Nhận tại cửa hàng","Giao tận nơi"</text>
+        </inputValues>
+      </input>
+      <output id="Output_1" label="Đơn giá" name="price" typeRef="long" />
+      <rule id="DecisionRule_1gfpohb">
+        <inputEntry id="UnaryTests_0csla6h">
+          <text>"Gato"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ntmd65">
+          <text>"Nhận tại cửa hàng"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_16hu2v1">
+          <text>95000</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1enfp8x">
+        <inputEntry id="UnaryTests_0ne65zt">
+          <text>"Gato"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_18r0fr6">
+          <text>"Giao tận nơi"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ljqudm">
+          <text>120000</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1uf3qjk">
+        <inputEntry id="UnaryTests_1l7bkf2">
+          <text>"Mousse"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1hjvb75">
+          <text>"Nhận tại cửa hàng"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ot36k0">
+          <text>85000</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0v42wy9">
+        <inputEntry id="UnaryTests_0p5scph">
+          <text>"Mousse"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1wghsfy">
+          <text>"Giao tận nơi"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1o7dng0">
+          <text>110000</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1vqkdp8">
+        <inputEntry id="UnaryTests_0snodnh">
+          <text>"Tiramisu"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13bnaz6">
+          <text>"Nhận tại cửa hàng"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_07tk7gw">
+          <text>85000</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1b5388q">
+        <inputEntry id="UnaryTests_0634hzo">
+          <text>"Tiramisu"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1nth6z4">
+          <text>"Giao tận nơi"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0db8j2r">
+          <text>110000</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="xuly-datbanhkem">
+        <dc:Bounds height="80" width="180" x="150" y="80" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
